@@ -358,12 +358,21 @@
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.querySelector('.hamburger');
             const navUL = document.querySelector('.nav-links ul');
-
+            const navLinks = document.querySelectorAll('.nav-links ul li a');
+        
             hamburger.addEventListener('click', function() {
                 hamburger.classList.toggle('active');
                 navUL.classList.toggle('active');
             });
+        
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navUL.classList.remove('active');
+                });
+            });
         });
+
 
         // Hintergrundbild-Slider
         let images = [
