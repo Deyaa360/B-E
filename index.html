@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bauelemente-experte bietet hochwertige Fenster, Türen, Beschattungssysteme und mehr in Nordrhein-Westfalen. Zertifizierte Markenproduktion CE. Kontaktieren Sie uns für eine kostenlose Beratung.">
+    <title>Bauelemente-experte - Fenster, Türen und mehr in Nordrhein-Westfalen</title>
+
+    <!-- Fonts und Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Portfolio Section */
+        .portfolio-section {
+            position: relative;
+        }
+        .owl-carousel .item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .owl-nav button {
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .owl-nav button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .owl-carousel .owl-dots {
+            display: flex;
+            justify-content: center;
+        }
+        .owl-carousel .owl-dots .owl-dot {
+            margin: 5px;
+        }
+        .owl-carousel .owl-dots + .owl-dots {
+            display: none;
+        }
+        /* Custom styles for image manipulation */
+        .custom-image {
+            width: 120%; /* Resize width */
+            max-width: 500px; /* Maximum width */
+            height: auto; /* Keep aspect ratio */
+            margin: 0 auto; /* Center horizontally */
+            position: relative; /* Position relative for top/left properties */
+            top: 20px; /* Move down by 20px */
+            right: 40px; /* Move right by 10px */
+        }
+
+        /* Custom styles for icon hover effect in Services section */
+        .p-6:hover i {
+            color: #e57373; /* Slightly different color for hover effect */
+            transform: scale(1.2); /* Slightly increase the size */
+            transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <div class="background-container background1"></div>
+        <div class="background-container background2"></div>
+        <nav>
+            <a href="index.html"><img src="images/RW-logo.svg" alt="Logo"></a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Startseite</a></li>
+                    <li><a href="">Über uns</a></li>
+                    <li><a href="">Dienstleistungen</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1 class="text-white text-4xl lg:text-6xl font-bold">
+                <span>BAUELEMENTE-EXPERTE</span><br>
+                Ihr Schlüssel zu erstklassigen Baulösungen in Nordrhein-Westfalen
+            </h1>
+            <p class="text-white text-lg mt-4">Ihr Fachmann für Fenster, Türen, Beschattungssysteme und mehr in Nordrhein-Westfalen. Qualität, auf die Sie sich verlassen können.</p>
+            <a href="" class="hero-btn inline-block text-white font-semibold border border-white py-3 px-6 rounded-full transition-colors duration-75 hover:bg-red-500 hover:border-red-500">Kontaktieren Sie uns</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-gray-50">
+        <div class="container mx-auto text-center max-w-screen-lg px-4">
+            <h2 class="text-3xl font-bold">ÜBER UNS</h2>
+            <div class="flex flex-wrap mt-8">
+                <div class="w-full md:w-1/2 p-4">
+                    <img src="images/banner/about.jpeg" alt="Über uns" class="rounded-lg shadow-md mx-auto hover:shadow-lg transition-shadow custom-image">
+                </div>
+                <div class="w-full md:w-1/2 p-4 text-left">
+                    <h3 class="text-2xl font-bold text-left">Unser Engagement für Exzellenz</h3>
+                    <p class="mt-4">
+                        Bei Bauelemente-Experte spezialisieren wir uns auf die Bereitstellung hochwertiger Baulösungen in Nordrhein-Westfalen. Mit jahrelanger Erfahrung in der Branche sind wir Ihr vertrauenswürdiger Partner für Fenster, Türen, Beschattungssysteme und mehr. Unser Team ist bestrebt, außergewöhnliche Handwerkskunst und erstklassigen Kundenservice zu liefern, um sicherzustellen, dass jedes Projekt Ihre individuellen Bedürfnisse und Erwartungen erfüllt. Wir operieren im gesamten Bundesland Nordrhein-Westfalen und bieten unseren Kunden in der Region die besten Lösungen.
+                    </p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-center">
+                            <i class="bi bi-check text-red-500 mr-2"></i> Erfahrene Fachleute
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-check text-red-500 mr-2"></i> Anpassbare Lösungen
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-check text-red-500 mr-2"></i> Hochwertige Materialien
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-check text-red-500 mr-2"></i> Nachhaltige Praktiken
+                        </li>
+                        <li class="flex items-center">
+                            <i class="bi bi-check text-red-500 mr-2"></i> Hervorragender Kundenservice
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center max-w-screen-lg px-4">
+            <h2 class="text-3xl font-bold mb-8">Unsere Dienstleistungen</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <div class="mb-4">
+                        <i class="fas fa-door-closed text-red-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Türen</h3>
+                    <p class="text-gray-600">Installation und Verkauf von ALU-Haustüren, Nebentüren, Kellertüren, Balkonausgangstüren und Hebeschiebe-Türen mit verschiedenen Optionen.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <i class="fas fa-window-restore text-red-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">ALU- und PVC-Fenster</h3>
+                    <p class="text-gray-600">Professionelle Installation von hochwertigen Aluminium- und PVC-Fenstern.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <i class="fas fa-sun text-red-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Beschattungssysteme</h3>
+                    <p class="text-gray-600">Vorsatzrollladen, Markisen und zertifizierte Beschattungssysteme.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <i class="fas fa-home text-red-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Wintergärten</h3>
+                    <p class="text-gray-600">Design und Installation von funktionalen und schönen Wintergärten.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <i class="fas fa-warehouse text-red-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Garagentore</h3>
+                    <p class="text-gray-600">Installation von Garagen-Sektionaltoren, Garagenschwingtoren und Garagentüren.</p>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <i class="fas fa-solar-panel text-red-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Solar Panel Systeme</h3>
+                    <p class="text-gray-600">Installation von effizienten und nachhaltigen Solarpanelsystemen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-12 bg-white portfolio-section">
+        <div class="container mx-auto text-center max-w-screen-lg px-4">
+            <h2 class="text-3xl font-bold mb-8">Unser Portfolio</h2>
+            <div class="owl-carousel owl-theme">
+                <!-- Windows Images -->
+                <div class="item">
+                    <img src="images/portfolio/Fenster.jpg" alt="Fenster 1 - Hochwertige Fensterinstallation" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/Fenster2.jpg" alt="Fenster 2 - Moderne Fensterlösungen" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/Fenster3.jpg" alt="Fenster 3 - Energieeffiziente Fenster" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/Fenster4.jpg" alt="Fenster 4 - Zeitgemäßes Design" class="lazy">
+                </div>
+                <!-- Doors Images -->
+                <div class="item">
+                    <img src="images/portfolio/Tueren.jpg" alt="Türen 1 - Stilvolle Türinstallation" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/Tueren2.jpg" alt="Türen 2 - Sicherheits- und Funktionstüren" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/Tueren3.jpg" alt="Türen 3 - Ästhetische Türdesigns" class="lazy">
+                </div>
+                <!-- Solar Images -->
+                <div class="item">
+                    <img src="images/portfolio/solar1.jpg" alt="Solar 1 - Effiziente Solarsysteme" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/solar2.jpg" alt="Solar 2 - Nachhaltige Energie" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/solar3.jpg" alt="Solar 3 - Moderne Solartechnologie" class="lazy">
+                </div>
+                <div class="item">
+                    <img src="images/portfolio/solar4.jpg" alt="Solar 4 - Umweltfreundliche Lösungen" class="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center max-w-screen-lg px-4">
+            <h2 class="text-3xl font-bold mb-8">Unsere Partner</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Sch%C3%BCco_2011_logo.svg" alt="Schüco Logo" class="mx-auto h-16">
+                </div>
+                <div class="p-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Salamander_Industrie-Produkte_Logo.svg" alt="Salamander Logo" class="mx-auto h-16">
+                </div>
+                <div class="p-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Gealan_Fenster-Systeme_logo.svg" alt="GEALAN Logo" class="mx-auto h-16">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto text-center max-w-screen-lg px-4">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">Kontaktieren Sie uns</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="contact-icon text-center">
+                    <div class="single-icon mb-4">
+                        <i class="bi bi-phone text-red-500 text-4xl"></i>
+                        <p class="mt-2 text-gray-800">
+                            Mobil: +49 1577 1365735<br>
+                            Mobil: +49 1573 6304369<br>
+                            Festnetz: 0203 34394895<br>
+                            <span>Montag-Freitag (9-17 Uhr)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icon text-center">
+                    <div class="single-icon mb-4">
+                        <i class="bi bi-envelope text-red-500 text-4xl"></i>
+                        <p class="mt-2 text-gray-800">
+                            Email: info@example.com<br>
+                            <span>Web: www.example.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icon text-center">
+                    <div class="single-icon mb-4">
+                        <i class="bi bi-geo-alt text-red-500 text-4xl"></i>
+                        <p class="mt-2 text-gray-800">
+                            Standort: A108 Adam Street<br>
+                            <span>NY 535022, USA</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+                <div class="map-container" style="border-radius: 0.5rem; box-shadow: 0 10px 20px rgba(0, 5, 1, 0.2);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549048.365144202!2d5.025177005430586!3d51.39744950424678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9167c8e4248a1%3A0x2f4c327e4fd78f5f!2sNorth%20Rhine-Westphalia%2C%20Germany!5e0!3m2!1sen!2sus!4v1717264136305!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-semibold text-gray-800">Ihr Name</label>
+                            <input type="text" name="name" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Ihr Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-semibold text-gray-800">Ihre Email</label>
+                            <input type="email" name="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Ihre Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-sm font-semibold text-gray-800">Betreff</label>
+                            <input type="text" name="subject" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Betreff" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-semibold text-gray-800">Nachricht</label>
+                            <textarea name="message" id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Nachricht" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="px-6 py-3 rounded-full bg-red-500 text-white transition-colors hover:bg-red-600">Nachricht senden</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center max-w-screen-lg px-4">
+            <h4 class="text-lg font-bold mb-4">Über uns</h4>
+            <p class="mb-4">Bauelemente-experte bietet hochwertige Fenster, Türen, Beschattungssysteme und mehr in Nordrhein-Westfalen. Zertifizierte Markenproduktion CE.</p>
+            <div class="social-links flex justify-center space-x-4">
+                <a href="https://www.facebook.com/yourfacebookpage" target="_blank" aria-label="Folgen Sie uns auf Facebook" class="hover:text-red-500 transition-colors">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/yourinstagramhandle" target="_blank" aria-label="Folgen Sie uns auf Instagram" class="hover:text-red-500 transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" aria-label="Vernetzen Sie sich mit uns auf LinkedIn" class="hover:text-red-500 transition-colors">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/yourtwitterhandle" target="_blank" aria-label="Folgen Sie uns auf Twitter" class="hover:text-red-500 transition-colors">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        // Hamburger Menü
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navUL = document.querySelector('.nav-links ul');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navUL.classList.toggle('active');
+            });
+        });
+
+        // Hintergrundbild-Slider
+        let images = [
+            'images/banner/banner1.jpg', 
+            'images/banner/banner2.jpeg',
+            'images/banner/banner3.jpg',
+        ];
+        let currentIndex = 0;
+        const background1 = document.querySelector('.background1');
+        const background2 = document.querySelector('.background2');
+        let fade = false;
+
+        function changeImage() {
+            if (fade) {
+                background2.style.backgroundImage = `url(${images[currentIndex]})`;
+                background2.style.opacity = 1;
+                background1.style.opacity = 0;
+            } else {
+                background1.style.backgroundImage = `url(${images[currentIndex]})`;
+                background1.style.opacity = 1;
+                background2.style.opacity = 0;
+            }
+            fade = !fade;
+            currentIndex = (currentIndex + 1) % images.length;
+            setTimeout(changeImage, 6000);
+        }
+
+        window.onload = function() {
+            background1.style.backgroundImage = `url(${images[0]})`;
+            background2.style.backgroundImage = `url(${images[1]})`;
+            currentIndex = 2;
+            setTimeout(changeImage, 6000);
+        };
+
+        // Portfolio-Karussell
+        $(document).ready(function(){
+            if (!$('.owl-carousel').hasClass('owl-loaded')) {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    items: 1,
+                    lazyLoad: true,
+                    dots: true,
+                    navText: [
+                        '<button><i class="bi bi-chevron-left"></i></button>',
+                        '<button><i class="bi bi-chevron-right"></i></button>'
+                    ]
+                });
+            }
+        });
+    </script>
+</body>
+</html>
