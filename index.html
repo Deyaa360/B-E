@@ -19,6 +19,22 @@
 
     <!-- Custom Styles -->
     <style>
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animated-background {
+            animation: zoomIn 10s infinite ease-in-out;
+        }
+
         /* Portfolio Section */
         .portfolio-section {
             position: relative;
@@ -85,8 +101,8 @@
 <body>
     <!-- Header Section -->
     <section class="header">
-        <div class="background-container background1"></div>
-        <div class="background-container background2"></div>
+        <div class="background-container background1 animated-background"></div>
+        <div class="background-container background2 animated-background"></div>
         <nav>
             <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
             <div class="hamburger">
@@ -372,7 +388,6 @@
                 });
             });
         });
-
 
         // Hintergrundbild-Slider
         let images = [
